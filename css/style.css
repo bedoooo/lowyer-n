@@ -3478,10 +3478,10 @@ header .logo {
   margin-top: 10px;
   margin-right: 10px;
 
-  border-radius: 50%;
+  border-radius: 31%;
 }
 .logo-img img{
-border-radius: 50%;
+border-radius: 31%;
 }
 
 .saralogo{
