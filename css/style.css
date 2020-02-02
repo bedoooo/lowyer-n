@@ -73,7 +73,6 @@
  70 header update styles 
  71 call to action area styles 
  72 contact google map styles 
-
 *********************************************
 *********************************************/
 
@@ -95,15 +94,24 @@
 @import url('strocke-gap-icons-style.css');
 @import url('settings.css');
 @import url('flaticon.css');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css); 
 
 
 
 /*Start Base CSS */
 html,
 body { height: 100% }
-
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Droid Arabic Kufi', Tahoma !important;
+}
 body {
   font-family: 'Raleway', sans-serif;
+   font-family:'Droid Arabic Kufi', Tahoma !important;
   font-size: 14px;
   line-height: 24px;
   color: #878787;
@@ -461,10 +469,7 @@ p {
 /*End Slider Area Css*/
 
 /*------------------------------------------------ (Start Slider bottom text )
-
-
 markup:
-
 <div class="row">
     <div class="col-lg-12">
         <div class="call-info">
@@ -476,9 +481,7 @@ markup:
        </div>
     </div>
 </div>
-
 css:
-
 .call-info {
   background: #b89b5e none repeat scroll 0 0;
   display: block;
@@ -517,8 +520,6 @@ css:
   font-style: italic;
   font-family: 'PT Serif', serif;
 }
-
-
 ---------------------------------------------------(End Slider bottom text )-------------------------*/
 
 /*End Top area CSS */
@@ -3437,12 +3438,16 @@ span.progress-bar-tooltip {
 
 
 header.stricky {
-  position: fixed;
+  position: inherit;
   top: 0;
   left: 0;
   z-index: 99999;
   width: 100%;
   border-bottom: 1px solid rgba(174,174,174,.3);
+}
+.mainmenu .nav-holder > ul > li > a:hover{
+  color: #000;
+
 }
 header.stricky-fixed {
   background: #1F1F1F;
@@ -3455,10 +3460,13 @@ header.stricky-fixed .logo {
 header.stricky-fixed .mainmenu .nav-holder > ul > li > a {
   line-height: 70px;
   /*color: #242424;*/
+  color: #b89b5e;
 }
+
 header.stricky-fixed .mainmenu .nav-holder > ul > li > a:hover {
-  color: #B89B5E;
+  color: #000;
 }
+
 header.stricky-fixed .mainmenu .nav-holder > ul > li.dropdown > a:after {
  /*color: #242424; */
 }
@@ -3473,24 +3481,18 @@ header .logo {
   margin-top: -5px;
 }
 .logo-img {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
+  width: 125px;
+  margin-top: -14px;
   margin-right: 10px;
 
   border-radius: 31%;
+
 }
 .logo-img img{
 border-radius: 31%;
 }
 
-.saralogo{
-  color: #ffffff;
-    font-size: 28px;
-    font-weight: bolder;
-    line-height: 100px;
 
-}
 
 .lawerlogo{
   color: #ffffff;
@@ -3774,8 +3776,8 @@ header .search-box button {
   font-size: 0;
 }
 .mainmenu .nav-holder > ul > li > a {
-  color: #ffffff;
-  font-size: 14px;
+  color: #b89b5e;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -3785,7 +3787,7 @@ header .search-box button {
   transition: all .3s ease;
 }
 .mainmenu .nav-holder > ul > li:hover > a {
-  color: #B89B5E;
+  color: #000;
 }
 .mainmenu .nav-expander > ul {  
   font-size: 0;
@@ -4071,4 +4073,10 @@ header .search-box button {
 .alignleft{
   float: right;
   margin-left: 15px;
+}
+.icon {
+  font-family: 'Stroke-Gap-Icons' !important;
+}
+.single-featured-icon i{
+  font-family:  FontAwesome !important;
 }
