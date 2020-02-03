@@ -4080,3 +4080,29 @@ header .search-box button {
 .single-featured-icon i{
   font-family:  FontAwesome !important;
 }
+.welcome-attorney{
+  margin-right: -100%;
+}
+@media (max-width: 767px) {
+  .welcome-attorney{
+    margin-right: unset;
+  }
+  .logo-img {
+    margin-top: 2px;
+    margin-bottom: -1px;
+  
+}
+
+.logo-img {
+    width: 125px;
+    margin-right: -35px;
+    border-radius: 31%;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .welcome-attorney{
+    margin-right: unset;
+  }
+}
